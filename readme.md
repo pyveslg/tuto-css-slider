@@ -6,7 +6,7 @@ Design a mobile-friendly css-only slider
 
 I used css-grid but this could be achieved as well with flexboxes.
 
-## Comments of my code
+## Comments
 
 ### **1. Prepare your HTML structure**
 Draw it with excalidraw
@@ -51,8 +51,10 @@ no bounce effect at the end of the slider
     padding-left: var(--gap);
   }
 ```
+
 We defined a css variable named after "gap" to easily change the gap-spacing value if needed later
-  We can reuse a variable using var(name-of-the-variable)
+
+We can reuse a variable using var(name-of-the-variable)
 
   **2. Define a div which is the slider**
 ```css
@@ -66,9 +68,13 @@ We defined a css variable named after "gap" to easily change the gap-spacing val
     padding-bottom: var(--gap);
   }
 ```
+
 `grid-auto-flow: column;` automatically makes n-elements live in n-columns. We conveniently don't need to specify the number of elements in our grid!
+
 `grid-auto-columns: minmax(180px, 1fr);` each column will be 180px-wide minimum or 1-fraction-wide if larger than 180px.
+
 `overflow-x: auto;` enables the horizontal scrolling
+
 `overscroll-behavior-x: contain;` prevents the screen from bouncing at scrolling at the end of the slider
 
   **3. Show padding on the right-hand side when slider ends.**
