@@ -8,10 +8,10 @@ I used css-grid but this could be achieved as well with flexboxes.
 
 ## Comments of my code
 
-1. Prepare your HTML structure
+**1. Prepare your HTML structure**
 Draw it with excalidraw
 
-2. Create your card component
+**2. Create your card component**
 HTML
 ```html
   <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1574963835057-bcc8418c971c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTMwfHx8ZW58MHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60)">
@@ -37,12 +37,12 @@ and then css
   }
 ```
 
-3. Define slider behavior
+**3. Define slider behavior**
 
 no margin on right except once at the end of carousel
 no bounce effect at the end of the slider
 
-4. Code slider
+**4. Code slider**
 
   1. Create a div in which the slider will be contained
     ```css
