@@ -1,0 +1,17 @@
+/* Import font family from Google Fonts library*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+/* Import card components*/
+@import "components/index.css";
+
+
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+}
+
+h1 {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}

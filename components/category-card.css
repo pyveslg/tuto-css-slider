@@ -1,0 +1,36 @@
+
+.card-categories {
+  --gap: 1rem;
+  padding-left: var(--gap);
+}
+
+.horizontal-slider {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(180px, 1fr);
+  grid-gap: var(--gap);
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  padding-bottom: var(--gap);
+}
+
+.horizontal-slider:after {
+  content: '';
+  width: 1px;
+}
+
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  text-align: center;
+}
